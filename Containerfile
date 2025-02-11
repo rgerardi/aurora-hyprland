@@ -1,4 +1,5 @@
-FROM ghcr.io/ublue-os/silverblue-main:latest
+FROM ghcr.io/ublue-os/aurora-dx:stable
+# FROM ghcr.io/ublue-os/silverblue-main:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable

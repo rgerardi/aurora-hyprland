@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux 
+# dnf install -y tmux 
 
 # Use a COPR Example:
 #
@@ -18,6 +18,9 @@ dnf install -y tmux
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+dnf5 -y copr enable solopasha/hyprland
+
+dnf5 install -y tmux brightnessctl catimg dunst htop iftop iw fontawesome-fonts-all pamixer pavucontrol playerctl scrot terminator source-foundry-hack-fonts cascadia-code-nf-fonts cascadia-mono-nf-fonts zathura zathura-pdf-mupdf rofi foot foot-terminfo grim hyprland hyprpaper hyprlock hypridle kitty nwg-bar nwg-look slurp xdg-desktop-portal-hyprland wofi waybar wl-clipboard
 
 #### Example for enabling a System Unit File
 
